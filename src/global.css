@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #010101;
+}
+
+#box{
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 0;
+    opacity: 1;
+}
+
+p{
+    font-size: 4rem;
+    color: #f1f1f1;
+    z-index: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
