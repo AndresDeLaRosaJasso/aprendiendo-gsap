@@ -1,32 +1,28 @@
 import { gsap } from "gsap";
 
-gsap.from("#box",{
-  duration: 1,
-  opacity: 1,
-  y: 200,
+gsap.from(".grid", {
+    delay: 1,
+    duration: 1.5,
+    opacity: 0,
+    y: 20,
+    scale: 0.9,
+    backgroundColor: "#010101",
+    ease: 'power4.out'
   
 })
 
-/* gsap.to(".box",{
-  duration: 2,
-  x: 200,
-  backgroundColor: 'blue',
-  repeat: -1,
-  yoyo: true,
-  borderRadius: 100,
-  rotate: 360,
-}) */
-
-/* gsap.fromTo(".box", {
-  duration: 3,
-  scale: 0,
-  borderRadius: 8,
-  width: 150
-  
-},{
-  
-  scale: 0.65,
-  borderRadius: 20,
-  width: 800
-  
-}) */
+gsap.from(".grid-item", {
+    duration: 1.5,
+    delay: 1.2,
+    scale: 0.9,
+    rotate: 50,
+    borderRadius: 100,
+    stagger: {
+        amount: 0.1,
+        ease: 'power4.out',
+        from: 'end',
+        /* axis: "y" */
+        /* each: 0.1 */
+        
+    },
+})

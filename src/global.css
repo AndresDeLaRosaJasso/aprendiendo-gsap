@@ -10,6 +10,7 @@
     position: relative;
 }
 
+
 .hero{
     display: flex;
     justify-content: center;
@@ -28,8 +29,33 @@
 }
 
 p{
-    font-size: 4rem;
+    font-size: 1rem;
     color: #f1f1f1;
     z-index: 1;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grid{
+    width: clamp(200px, 60%, 2000px);
+    border-radius: 6px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas: 
+    "b1 b2 b3 b4"
+    "b5 b5 b6 b6";
+    
+    grid-template-rows: 200px 200px;
+
+    gap: 10px;
+    padding: 10px;
+
+    background-color: rgb(119, 127, 135);
+
+    z-index: 1;
+}
+
+.grid-item{
+    border-radius: 8px;
+    background-color: #30333b;
 }
