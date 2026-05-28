@@ -59,3 +59,29 @@ p{
     border-radius: 8px;
     background-color: #30333b;
 }
+
+.hotbar{
+    position: fixed;
+    width: 100vw;
+    top: 0;
+
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+
+    z-index: 1;
+
+}
+
+#svg-menu{
+    width: 40px;
+    stroke: #fefddf;
+    cursor: pointer;
+
+}
+
+#logo-gsap{
+    width: 100px;
+}

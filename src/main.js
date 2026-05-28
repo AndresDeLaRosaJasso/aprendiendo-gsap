@@ -26,3 +26,20 @@ gsap.from(".grid-item", {
         
     },
 })
+
+let tl = gsap.timeline()
+
+
+tl.from(".logo", {
+    duration: 1.5,
+    delay: 1.5,
+    opacity: 0
+});
+tl.from(".menu", {
+    duration: 1,
+    x: 100,
+    rotate: 360,
+    ease: 'bounce.out'
+
+}, "-=1");
+
